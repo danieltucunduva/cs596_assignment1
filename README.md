@@ -2,9 +2,6 @@
 
 ## Authors:
 Daniel Correa Tucunduva  
-
-## Jupyter output
-<a href="./jupyter_output.png"></a>
  
 ## KNN accuracy results:
 
@@ -66,3 +63,10 @@ reg_const = 0.01
 The training accuracy is given by : 40.830612  
 The validation accuracy is given by : 39.900000  
 The **testing** accuracy is given by : 39.700000  
+
+
+## Jupyter output
+
+<a href="<img src="https://github.com/danieltucunduva/cs596_assignment1/blob/master/jupyter_output.png"/>">jupyter_output.png</a>  
+
+<img src="https://github.com/danieltucunduva/cs596_assignment1/blob/master/jupyter_output.png"/>
