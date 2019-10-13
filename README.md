@@ -67,6 +67,7 @@ The **testing** accuracy is given by : 39.700000
 
 ## Jupyter output
 
-<a href="<img src="https://github.com/danieltucunduva/cs596_assignment1/blob/master/jupyter_output.png"/>">jupyter_output.png</a>  
-
-<img src="https://github.com/danieltucunduva/cs596_assignment1/blob/master/jupyter_output.png"/>
+<a href="https://github.com/danieltucunduva/cs596_assignment1/blob/master/jupyter_output.png">jupyter_output.png</a>  
+  
+  
+<img src="https://github.com/danieltucunduva/cs596_assignment1/blob/master/jupyter_output.png" alt="jupyter output"/>
