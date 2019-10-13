@@ -1,8 +1,7 @@
-import numpy as np
-import scipy
 from sklearn.linear_model import Perceptron as SklearnPerceptron
 
-class Perceptron():
+
+class Perceptron:
     def __init__(self):
         """
         Initialises Perceptron classifier with initializing 
@@ -12,7 +11,7 @@ class Perceptron():
         self.alpha = 0.01
         self.epochs = 300
         self.perceptron = SklearnPerceptron(alpha=self.alpha, max_iter=self.epochs, n_jobs=-1)
-        
+
     def train(self, X_train, y_train):
         """
         Train the Perceptron classifier. Use the perceptron update rule
@@ -39,4 +38,4 @@ class Perceptron():
           test data, where y[i] is the predicted label for the test point X[i].  
         """
         pred = self.perceptron.predict(X_test)
-        return pred 
+        return pred

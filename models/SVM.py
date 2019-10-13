@@ -1,6 +1,7 @@
-import numpy as np
+from sklearn.linear_model import SGDClassifier
 
-class SVM():
+
+class SVM:
     def __init__(self):
         """
         Initialises Softmax classifier with initializing 
@@ -9,31 +10,11 @@ class SVM():
         """
         self.w = None
         self.alpha = 0.01
-        self.epochs = 100
-        self.reg_const = 0.05
-        
-    def calc_gradient(self, X_train, y_train):
-        """
-		It is not mandatory for you to implement this function if you find 
-		an equivalent one in Pytorch
-		
-		
-          Calculate gradient of the svm hinge loss.
-          
-          Inputs have dimension D, there are C classes, and we operate on minibatches
-          of N examples.
+        self.epochs = 500
+        self.reg_const = 0.01
+        self.svm = SGDClassifier(learning_rate='adaptive', eta0=self.alpha, alpha=self.reg_const, max_iter=self.epochs,
+                                 loss='hinge', n_jobs=-1)
 
-          Inputs:
-          - X_train: A numpy array of shape (N, D) containing a minibatch of data.
-          - y_train: A numpy array of shape (N,) containing training labels; y[i] = c means
-            that X[i] has label c, where 0 <= c < C.
-
-          Returns:
-          - gradient with respect to weights W; an array of same shape as W
-         """
-
-        return grad_w
-        
     def train(self, X_train, y_train):
         """
         Train SVM classifier using stochastic gradient descent.
@@ -45,6 +26,7 @@ class SVM():
         
         Hint : Operate with Minibatches of the data for SGD
         """
+        self.svm.fit(X=X_train, y=y_train)
 
     def predict(self, X_test):
         """
@@ -60,4 +42,5 @@ class SVM():
           array of length N, and each element is an integer giving the predicted
           class.
         """
+        pred = self.svm.predict(X=X_test)
         return pred

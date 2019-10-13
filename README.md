@@ -1,4 +1,4 @@
-# CS596 Assignment 1
+# CS596 Assignment 1 - Fall 2019
 
 ## Authors:
 Daniel Correa Tucunduva  
@@ -33,15 +33,33 @@ The validation accuracy for k = 40.000000 is given by : 29.900000
   
   => best k: 1  
   
-The testing accuracy for k = 1.000000 is given by : 35.000000  
+The **testing** accuracy for k = 1.000000 is given by : 35.000000  
 
 ## Perceptron results:
 
-Alpha = 0.01  
-Epochs = 300  
+alpha = 0.01  
+epochs = 300  
 
-The training accuracy is given by : 23.775510
-The validation accuracy is given by : 22.700000
-The testing accuracy is given by : 22.020000
+The training accuracy is given by : 23.775510  
+The validation accuracy is given by : 22.700000  
+The **testing** accuracy is given by : 22.020000  
 
-##
+## SVM
+
+alpha = 0.01  
+epochs = 500  
+reg_const = 0.01  
+
+The training accuracy is given by : 42.426531  
+The validation accuracy is given by : 37.900000  
+The **testing** accuracy is given by : 39.860000  
+
+## Softmax
+
+alpha = 0.01  
+epochs = 1000  
+reg_const = 0.01  
+
+The training accuracy is given by : 40.830612  
+The validation accuracy is given by : 39.900000  
+The **testing** accuracy is given by : 39.700000  

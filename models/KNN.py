@@ -1,6 +1,5 @@
-import numpy as np
-import scipy
 from sklearn.neighbors import KNeighborsClassifier
+
 
 class KNN():
     def __init__(self, k):
@@ -9,7 +8,7 @@ class KNN():
         """
         self.classifier = None
         self.k = k
-    
+
     def train(self, X, y):
         """
         Train the classifier. For k-nearest neighbors this is just 
@@ -23,7 +22,7 @@ class KNN():
         """
         self.classifier = KNeighborsClassifier(n_neighbors=self.k, n_jobs=-1)
         self.classifier.fit(X, y)
-    
+
     def predict(self, X_test):
         """
         Predict labels for test data using the computed distances.
