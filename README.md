@@ -1,6 +1,9 @@
-# cs596_assignment1
+# CS596 Assignment 1
+
+## Authors:
+Daniel Correa Tucunduva  
  
-KNN accuracy results:
+## KNN accuracy results:
 
 The validation accuracy for k = 1.000000 is given by : 35.700000  
 The validation accuracy for k = 2.000000 is given by : 30.900000  
@@ -31,3 +34,14 @@ The validation accuracy for k = 40.000000 is given by : 29.900000
   => best k: 1  
   
 The testing accuracy for k = 1.000000 is given by : 35.000000  
+
+## Perceptron results:
+
+Alpha = 0.01  
+Epochs = 300  
+
+The training accuracy is given by : 23.775510
+The validation accuracy is given by : 22.700000
+The testing accuracy is given by : 22.020000
+
+##

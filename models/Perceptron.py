@@ -1,6 +1,6 @@
 import numpy as np
 import scipy
-from sklearn.linear_model import Perceptron
+from sklearn.linear_model import Perceptron as SklearnPerceptron
 
 class Perceptron():
     def __init__(self):
@@ -9,9 +9,9 @@ class Perceptron():
         weights, alpha(learning rate) and number of epochs.
         """
         self.w = None
-        self.alpha = 0.5
-        self.epochs = 100
-        self.perceptron = Perceptron(alpha=self.alpha, max_iter=self.epochs)
+        self.alpha = 0.01
+        self.epochs = 300
+        self.perceptron = SklearnPerceptron(alpha=self.alpha, max_iter=self.epochs, n_jobs=-1)
         
     def train(self, X_train, y_train):
         """
