@@ -2,6 +2,9 @@
 
 ## Authors:
 Daniel Correa Tucunduva  
+
+## Jupyter output
+<a href="./jupyter_output.png"></a>
  
 ## KNN accuracy results:
 
