@@ -1,6 +1,6 @@
 import numpy as np
 import os
-from scipy.misc import imread
+from imageio import imread
 from six.moves import cPickle as pickle
 import platform
 

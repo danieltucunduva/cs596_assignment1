@@ -3,3 +3,8 @@
 /workspace.xml
 
 .idea/*
+
+/cifar10/cifar-10-batches-py/*
+
+
+*__pycache__*

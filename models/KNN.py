@@ -1,11 +1,13 @@
 import numpy as np
 import scipy
+from sklearn.neighbors import KNeighborsClassifier
 
 class KNN():
     def __init__(self, k):
         """
         Initializes the KNN classifier with the k.
         """
+        self.classifier = None
         self.k = k
     
     def train(self, X, y):
@@ -19,18 +21,8 @@ class KNN():
         - y: A numpy array of shape (N,) containing the training labels, where
              y[i] is the label for X[i].
         """
-    
-    def find_dist(self, X_test):
-        """
-        Compute the distance between each test point in X and each training point
-        in self.X_train.
-
-        Hint : Use scipy.spatial.distance.cdist
-
-        Returns :
-        - dist_ : Distances between each test point and training point
-        """
-        return dist_
+        self.classifier = KNeighborsClassifier(n_neighbors=self.k, n_jobs=-1)
+        self.classifier.fit(X, y)
     
     def predict(self, X_test):
         """
@@ -44,4 +36,4 @@ class KNN():
         - pred: A numpy array of shape (num_test,) containing predicted labels for the
           test data, where y[i] is the predicted label for the test point X[i].  
         """
-        return pred
+        return self.classifier.predict(X_test)

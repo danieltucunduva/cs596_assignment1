@@ -1,5 +1,6 @@
 import numpy as np
 import scipy
+from sklearn.linear_model import Perceptron
 
 class Perceptron():
     def __init__(self):
@@ -10,6 +11,7 @@ class Perceptron():
         self.w = None
         self.alpha = 0.5
         self.epochs = 100
+        self.perceptron = Perceptron(alpha=self.alpha, max_iter=self.epochs)
         
     def train(self, X_train, y_train):
         """
@@ -22,6 +24,7 @@ class Perceptron():
         - y_train: A numpy array of shape (N,) containing the training labels, where
              y[i] is the label for X[i].
         """
+        self.perceptron.fit(X=X_train, y=y_train)
 
     def predict(self, X_test):
         """
@@ -35,4 +38,5 @@ class Perceptron():
         - pred: A numpy array of shape (num_test,) containing predicted labels for the
           test data, where y[i] is the predicted label for the test point X[i].  
         """
+        pred = self.perceptron.predict(X_test)
         return pred 
