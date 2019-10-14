@@ -1,7 +1,12 @@
 # CS596 Assignment 1 - Fall 2019
 
 ## Authors:
-Daniel Correa Tucunduva  
+
+**Daniel Correa Tucunduva**    
+**Siqian Liu**  
+**Weina Zhu**  
+**Yan Jiang**  
+
  
 ## KNN
 
