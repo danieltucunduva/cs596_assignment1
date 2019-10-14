@@ -1,29 +1,25 @@
-import numpy as np
+from sklearn.linear_model import SGDClassifier
 
-class LinearRegression():
+
+class LinearRegression:
     def __init__(self):
         """
-        Initialises Softmax classifier with initializing 
-        weights, alpha(learning rate), number of epochs
-        and regularization constant.
+        Initialises LinearRegression classifier with initializing
+        alpha(learning rate), number of epochs
         """
-        self.w = None
-        self.alpha = 0.5
-        self.epochs = 100
-        self.reg_const = 0.05
-    
-    
+        self.alpha = 0.01
+        self.epochs = 1000
+        self.linear_model = SGDClassifier(learning_rate='adaptive', eta0=self.alpha,
+                                                max_iter=self.epochs, loss='squared_loss', n_jobs=-1)
+
     def train(self, X_train, y_train):
         """
-        Train Linear regression classifier using function from Pytorch
+        Train Linear regression classifier
         """
-
+        self.linear_model.fit(X=X_train, y=y_train)
     
     def predict(self, X_test):
         """
-        Use the trained weights of softmax classifier to predict labels for
-        data points.
-
         Inputs:
         - X_test: A numpy array of shape (N, D) containing training data; there are N
           training samples each of dimension D.
@@ -33,4 +29,5 @@ class LinearRegression():
           array of length N, and each element is an integer giving the predicted
           class.
         """
-        return pred 
+        pred = self.linear_model.predict(X=X_test)
+        return pred
