@@ -3,7 +3,7 @@
 ## Authors:
 Daniel Correa Tucunduva  
  
-## KNN accuracy results:
+## KNN
 
 The validation accuracy for k = 1.000000 is given by : 35.700000  
 The validation accuracy for k = 2.000000 is given by : 30.900000  
@@ -35,7 +35,7 @@ The validation accuracy for k = 40.000000 is given by : 29.900000
   
 The **testing** accuracy for k = 1.000000 is given by : 35.000000  
 
-## Perceptron results:
+## Perceptron
 
 alpha = 0.01  
 epochs = 300  
@@ -65,7 +65,7 @@ The validation accuracy is given by : 39.900000
 The **testing** accuracy is given by : 39.700000  
 
 
-## Jupyter output
+## Jupyter output screen capture
 
 <a href="https://github.com/danieltucunduva/cs596_assignment1/blob/master/jupyter_output.png">jupyter_output.png</a>  
   
