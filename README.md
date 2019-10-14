@@ -40,6 +40,16 @@ The validation accuracy for k = 40.000000 is given by : 29.900000
   
 The **testing** accuracy for k = 1.000000 is given by : 35.000000  
 
+## Linear regression
+
+learning rate = 0.1
+epochs = 500
+decay_rate: 0
+
+The training accuracy is given by : 10.377551  
+The validation accuracy is given by : 9.400000  
+The **testing** accuracy is given by : 10.140000  
+
 ## Perceptron
 
 alpha = 0.01  
@@ -59,15 +69,15 @@ The training accuracy is given by : 42.426531
 The validation accuracy is given by : 37.900000  
 The **testing** accuracy is given by : 39.860000  
 
-## Softmax
+## Logistic regression
 
-alpha = 0.01  
-epochs = 1000  
-reg_const = 0.01  
+learning rate = 0.001  
+epochs = 6  
+decay_rate: 0   
 
-The training accuracy is given by : 40.830612  
-The validation accuracy is given by : 39.900000  
-The **testing** accuracy is given by : 39.700000  
+The training accuracy is given by : 40  
+The validation accuracy is given by : 40  
+The **testing** accuracy is given by : 39  
 
 
 ## Jupyter output screen capture
